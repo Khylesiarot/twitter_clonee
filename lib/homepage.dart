@@ -1,8 +1,8 @@
 
 
 import 'package:flutter/material.dart';
-import 'package:twitter_clone/Screens/Widgets/drawerslide.dart';
-import 'package:twitter_clone/accounts/useracc.dart';
+import 'package:twitter_clonee/Screens/Widgets/drawerslide.dart';
+import 'package:twitter_clonee/accounts/useracc.dart';
 import './post/tweets.dart';
 import './botnav/botnavig.dart';
 import 'Screens/homescreen.dart';
