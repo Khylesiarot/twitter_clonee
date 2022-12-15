@@ -5,15 +5,13 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:twitter_clonee/Screens/searchacc.dart';
 import 'package:twitter_clonee/Screens/searchscreens/entertainment.dart';
-import 'package:twitter_clone/Screens/searchscreens/foryou.dart';
-import 'package:twitter_clone/Screens/searchscreens/news.dart';
-import 'package:twitter_clone/Screens/searchscreens/sports.dart';
-import 'package:twitter_clone/Screens/searchscreens/trending.dart';
+import 'package:twitter_clonee/Screens/searchscreens/foryou.dart';
+import 'package:twitter_clonee/Screens/searchscreens/news.dart';
+import 'package:twitter_clonee/Screens/searchscreens/sports.dart';
+import 'package:twitter_clonee/Screens/searchscreens/trending.dart';
 import 'package:twitter_clonee/homepage.dart';
 
-import '../searchscreens/foryou.dart';
-import '../searchscreens/news.dart';
-import '../searchscreens/trending.dart';
+
   
 
 class SearchScreen extends StatefulWidget{
