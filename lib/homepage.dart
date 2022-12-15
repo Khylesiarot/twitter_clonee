@@ -8,6 +8,7 @@ import './botnav/botnavig.dart';
 import 'Screens/homescreen.dart';
 import 'Screens/searchscreen.dart';
 
+
  final scaffoldKey = GlobalKey<ScaffoldState>();
 
  Useracc user = Useracc();
