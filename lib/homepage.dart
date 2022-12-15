@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:twitter_clonee/Screens/Widgets/drawerslide.dart';
+import 'package:twitter_clonee/Screens/spaces.dart';
 import 'package:twitter_clonee/accounts/useracc.dart';
 import './post/tweets.dart';
 import './botnav/botnavig.dart';
@@ -62,6 +63,7 @@ class Homepage extends State<HomePage> with TickerProviderStateMixin {
      body: TabBarView (controller: tabController,children: [
          HomeScreen(tweets,user),
           SearchScreen(),
+          Spacess(),
      ],),
 
      bottomNavigationBar: botnav(context, tabController)
