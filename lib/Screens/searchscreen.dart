@@ -2,7 +2,6 @@
 
 
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:twitter_clonee/Screens/searchacc.dart';
 import 'package:twitter_clonee/Screens/searchscreens/entertainment.dart';
 import 'package:twitter_clonee/Screens/searchscreens/foryou.dart';
@@ -100,12 +99,17 @@ class _SearchScreen extends State<SearchScreen> with TickerProviderStateMixin{
           ),
 
 
-          actions: [
-            IconButton( 
-              onPressed: () => {},
-              icon: const FaIcon(FontAwesomeIcons.cog),
-              iconSize: 20,
-              color: Colors.black,
+          actions: const [
+             Padding(
+              padding: EdgeInsets.only(right: 15.0),
+              child: SizedBox(
+                width: 25,
+                height: 25,
+                child: Image(
+                  image: NetworkImage('https://i.ibb.co/yVG8kxc/70314.png'),
+                  fit: BoxFit.contain,
+                ),
+              ),
             )
           ],
 
@@ -122,7 +126,7 @@ class _SearchScreen extends State<SearchScreen> with TickerProviderStateMixin{
                 borderSide:
                     BorderSide(color: Colors.blue, width: 3)),
                  tabs: 
-                 [
+                 const [
                   Tab(text: 'For You',),
                    Tab(text: 'Trending',),
                     Tab(text: 'News',),
@@ -130,7 +134,7 @@ class _SearchScreen extends State<SearchScreen> with TickerProviderStateMixin{
                       Tab(text: 'Entertainment',),
                  ],
         )),
-      body: TabBarView(controller: tabControllerS, children: [
+      body: TabBarView(controller: tabControllerS, children: const [
             Foryou(),
             Trending(),
              News(),
