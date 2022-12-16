@@ -64,10 +64,10 @@ class Homepage extends State<HomePage> with TickerProviderStateMixin {
       
      body: TabBarView (controller: tabController,children: [
          HomeScreen(tweets,user),
-          SearchScreen(),
-          Spacess(),
-          NotifScreen(),
-          Messages()
+          const SearchScreen(),
+          const Spacess(),
+          const NotifScreen(),
+          const Messages()
         
      ],),
 
