@@ -26,6 +26,20 @@ class Homescreen extends State<HomeScreen> {
     });
   }
 
+heartchage (Color cl2){
+  setState(() {
+    cl2 = Colors.red;
+  });
+}
+retweet(Color cl1){
+setState(() {
+  
+  cl1 = Colors.green;
+});
+}
+
+
+
   @override
   Widget build(BuildContext context) {
     
@@ -71,7 +85,7 @@ class Homescreen extends State<HomeScreen> {
           padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
           child: ListView.separated(
               itemBuilder: (context, index) {
-                return buildTweets(context, tweets, index,remove);
+                return BuildTweets(tweets, index,remove, tweets.tweets[index].loveCount,tweets.tweets[index].retweetCount);
               },
               separatorBuilder: (context, index) {
                 return  Container(

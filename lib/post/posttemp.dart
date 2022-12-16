@@ -3,8 +3,42 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import 'package:twitter_clonee/post/tweets.dart';
 
-Widget buildTweets(
-    BuildContext context, Tweets tweets, int index, Function remove) {
+import '../homepage.dart';
+
+class BuildTweets extends StatefulWidget {
+  
+
+   BuildTweets( this.tweets,this.index, this.remove,this.lvcount,this.retweetcnt,{super.key});
+  
+  Tweets tweets;
+  int index;
+  int lvcount;
+  int retweetcnt;
+  Function remove;
+  
+  @override
+  State<BuildTweets> createState() => BuildT();
+
+  
+}
+
+class BuildT extends State<BuildTweets> {
+
+  BuildT();
+  
+  get index => widget.index;
+   Color clr1  = Colors.grey.shade400;
+      Color clr2 = Colors.grey.shade400;
+
+      dynamic icn = FontAwesomeIcons.heart;
+   
+      
+  @override
+  Widget build(
+    BuildContext context) 
+    {
+
+     
   topicicon() {
     return Container(
         color: Colors.white,
@@ -22,7 +56,7 @@ Widget buildTweets(
     return Padding(
       padding: const EdgeInsets.fromLTRB(0, 0, 0, 5),
       child: Text(
-        tweets.tweets[index].topic,
+        widget.tweets.tweets[index].topic,
         style: const TextStyle(
           fontSize: 14.0,
           color: Color.fromARGB(255, 46, 45, 45),
@@ -143,14 +177,24 @@ Widget buildTweets(
                       Expanded(
                         child: Row(
                           children: <Widget>[
-                            const FaIcon(
-                              FontAwesomeIcons.retweet,
-                              size: 20,
+                            GestureDetector(
+                              child:  FaIcon(
+                                FontAwesomeIcons.retweet,
+                                size: 20,
+                                color: clr1,
+                              ),
+                              onTap: (){
+                                setState(() {
+                                 
+                                   widget.lvcount = widget.lvcount + 1;
+                                  clr1 = Colors.green;
+                                });
+                              },
                             ),
                             Padding(
                               padding: const EdgeInsets.only(left: 5.0),
                               child: Text(
-                                  tweets.tweets[index].retweetCount.toString()),
+                                 widget.lvcount.toString()),
                             ),
                           ],
                         ),
@@ -158,22 +202,33 @@ Widget buildTweets(
                       Expanded(
                         child: Row(
                           children: <Widget>[
-                            const FaIcon(
-                              FontAwesomeIcons.heart,
-                              size: 20,
+                             GestureDetector(
+                               child: FaIcon(
+                                icn,
+                                size: 20,
+                                color: clr2,
                             ),
+                            onTap: (){
+                              setState(() {
+                                widget.retweetcnt =widget.retweetcnt + 1;
+                                icn = FontAwesomeIcons.solidHeart;
+                                clr2 = Colors.red;
+                               
+                              });
+                            },
+                             ),
                             Padding(
                               padding: const EdgeInsets.only(left: 5.0),
                               child: Text(
-                                  tweets.tweets[index].loveCount.toString()),
+                                  widget.retweetcnt.toString()),
                             ),
                           ],
                         ),
                       ),
                       Expanded(
                           child: Row(
-                        children: <Widget>[
-                          const Icon(
+                        children: const <Widget>[
+                          Icon(
                             Icons.share,
                             color: Colors.grey,
                             size: 20.0,
@@ -194,7 +249,7 @@ Widget buildTweets(
             tweets.tweets[index].topic != ''
                 ? GestureDetector(
                     child: const Icon(Icons.close, size: 14),
-                    onTap: () => {remove(index)},
+                    onTap: () => {widget.remove(index)},
                   )
                 : const SizedBox(
                     height: 0,
@@ -213,4 +268,7 @@ Widget buildTweets(
       ],
     ),
   );
+}
+
+  
 }
