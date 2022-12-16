@@ -70,12 +70,17 @@ setState(() {
             FontAwesomeIcons.twitter,
             color: Colors.blue,
           ),
-          actions: [
-            IconButton(
-              onPressed: () => {},
-              icon: const FaIcon(FontAwesomeIcons.bolt),
-              iconSize: 20,
-              color: Colors.black,
+          actions: const [
+        Padding(
+              padding: EdgeInsets.only(right: 15.0),
+              child: SizedBox(
+                width: 30,
+                height: 30,
+                child: Image(
+                  image: NetworkImage('https://i.ibb.co/kKnWfW6/685173.png'),
+                  fit: BoxFit.contain,
+                ),
+              ),
             )
           ],
         ),

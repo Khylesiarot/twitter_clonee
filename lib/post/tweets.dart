@@ -1,11 +1,11 @@
 class Tweets {
   final List<Tweet> _tweets = [
     Tweet(
-      'https://pbs.twimg.com/profile_images/1187814172307800064/MhnwJbxw_400x400.jpg',
+      'https://i.ibb.co/svXyGnL/Mhnw-Jbxw-400x400.jpg',
       'Flutter Dev',
       '@flutter.dev',
       'Hello Flutter Developers Welcome to the awesomeness,Check This Out',
-      'https://th.bing.com/th/id/R.1341f5ee8e5314b9ce8da7fae4da4c87?rik=3Wc6UnNqJtyFSw&riu=http%3a%2f%2fwww.hdwallpaperspulse.com%2fwp-content%2fuploads%2f2014%2f05%2f08%2furl.jpeg&ehk=GerbdT%2f2pPqgOQzll1W8WzXk2W49xhQSyIQuMuAXxp4%3d&risl=&pid=ImgRaw&r=0',
+      'https://i.ibb.co/j3dYWjv/Flutter2-Lum.jpg',
       100,
       20,
       50,
@@ -13,7 +13,7 @@ class Tweets {
       'Flutter Gaming'
     ),
     Tweet(
-      'https://th.bing.com/th/id/OIP.0er-SoV5uRv-FQOCjKG_gwHaJm?pid=ImgDet&rs=1',
+      'https://i.ibb.co/4SMHHVj/create-cartoon-profile-pictures.jpg',
       'Hanz A',
       '@itsMehanz',
       'Lezgooooooooo jaguars! Roar!',
@@ -25,11 +25,11 @@ class Tweets {
       ''
     ),
     Tweet(
-      'https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png',
+      'https://i.ibb.co/M1TnYnz/react-1-282599.png',
       'React Native',
       '@rn.dev',
       'Hello React-Native Developers. Check This Out',
-      'https://qph.fs.quoracdn.net/main-qimg-f54b55df72cebb5cf9c8e97b303f7751',
+      'https://i.ibb.co/kmvPQJq/main-qimg-f54b55df72cebb5cf9c8e97b303f7751.png',
       60,
       78,
       20,
@@ -37,7 +37,7 @@ class Tweets {
       'Flutter Gaming'
     ),
     Tweet(
-      'https://th.bing.com/th/id/OIP.uuvzFMk8iS4oPil5PqoYtAHaI6?pid=ImgDet&rs=1',
+      'https://i.ibb.co/pLNJLMY/8fd53a6b496d9aaf0a03c8d3c1b7ea2c.jpg',
       'Weds',
       '@bossWeeds',
       'Ready for derby!',
@@ -49,11 +49,11 @@ class Tweets {
       ''
     ),
     Tweet(
-      'https://th.bing.com/th/id/OIP.SBHs_e9MF0ZtgSn6MbwwtgHaMA?pid=ImgDet&rs=1',
+      'https://i.ibb.co/pRvK5Sj/OIP.jpg',
       'Andrew Tate',
       '@Top.G',
       'Lahatin',
-      'https://sportbetting.ph/wp-content/uploads/2020/01/sabong-online-betting.jpg',
+      'https://i.ibb.co/7tTPsxc/sabong-online-betting.jpg',
       100,
       20,
       50,
@@ -61,7 +61,7 @@ class Tweets {
       ''
     ),
     Tweet(
-      'https://cdn.dribbble.com/users/2364329/screenshots/5930135/aa.jpg',
+      'https://i.ibb.co/Gnrnvgs/aa.jpg',
       'Captain America',
       '@itsMeKotsTroi',
       'Fly high!',
