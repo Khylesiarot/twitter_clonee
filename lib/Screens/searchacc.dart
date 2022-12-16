@@ -26,7 +26,7 @@ class _Search extends State<Search> with TickerProviderStateMixin {
     setState(() {
       filteredUsers = users
           .where(
-              (e) => e['userName'].toLowerCase().contains(value.toLowerCase()))
+              (e) => e['userName'].toLowerCase().contains(value.toLowerCase()) || e['usertag'].toLowerCase().contains(value.toLowerCase())  )
           .toList();
     });
   }
